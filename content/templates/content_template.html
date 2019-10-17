@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<!-- HTML 5up template: Story
+!! THIS IS AN AUTOMATICALLY GENERATED FILE. DO NOT CHANGE ANYTHING BY HAND, AS IT WILL BE OVERWRITTEN
+-->
+<html>
+
+<head>
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+</head>
+
+<!-- You have to set the active link here-->
+{% include "navbar_template.html" %}
+
+<body class="is-preload">
+
+    {% block body %}
+    <h1>UNRENDERED TEMPLATE USED</h1>
+    {% endblock %}
+    {% include "footer_template.html" %}
+    {% include "scripts_template.html" %}
+
+</body>
+
+</html>
