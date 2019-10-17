@@ -2,8 +2,6 @@ import jinja2 as ji
 import os
 
 file_base = os.path.abspath(__file__)
-print(file_base)
-print(os.path.dirname(file_base))
 
 env = ji.Environment(
     loader=ji.FileSystemLoader(os.path.join(
