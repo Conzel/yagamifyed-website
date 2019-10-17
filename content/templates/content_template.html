@@ -12,7 +12,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
-        <link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 </head>
 
 <!-- You have to set the active link here-->
@@ -20,9 +20,18 @@
 
 <body class="is-preload">
 
-    {% block body %}
-    <h1>UNRENDERED TEMPLATE USED</h1>
-    {% endblock %}
+    <div id="wrapper" class="divided">
+        <!-- Six -->
+        <section class="wrapper style1 align-center">
+            <div class="inner">
+                <h1>{{ title }}</h1>
+                {% block body %}
+                <h1>UNRENDERED TEMPLATE USED</h1>
+                {% endblock %}
+            </div>
+        </section>
+    </div>
+
     {% include "footer_template.html" %}
     {% include "scripts_template.html" %}
 
