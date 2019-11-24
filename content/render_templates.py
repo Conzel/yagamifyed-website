@@ -21,14 +21,14 @@ class Renderer:
         with open(self.file_name, "w+") as file:
            file.write(rendered_template)
 
-rend_cv = Renderer("curriculum_vitae", env)
-rend_cv.write(title="Curriculum Vitae", cv_active="active")
+# rend_cv = Renderer("curriculum_vitae", env)
+# rend_cv.write(title="Curriculum Vitae", cv_active="active")
 
-rend_books = Renderer("books", env)
-rend_books.write(title="Books", books_active="active")
+rend_books = Renderer("personal", env)
+rend_books.write(title="Personal", personal_active="active")
 
-rend_intro = Renderer("intro", env)
-rend_intro.write(title="Intro", intro_active="active")
+rend_intro = Renderer("about", env)
+rend_intro.write(title="About", about_active="active")
 
-rend_work = Renderer("work", env)
-rend_work.write(title="Work", work_active="active")
+rend_work = Renderer("research", env)
+rend_work.write(title="Research", research_active="active")
